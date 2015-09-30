@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" data-ng-app="app">
+<head>
+    <meta charset="utf-8"/>
+    <title>Example</title>
+</head>
+<body>
+    <div data-ng-controller="Shell as vm">
+        <h1>Last Update: {{vm.message}}</h1>
+
+        <h2>Products</h2>
+        <ul data-ng-repeat="product in vm.products">
+            <li>{{product.name}}</li>
+        </ul>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/signalr/jquery.signalr.js"></script>
+    <script src="bower_components/angular-signalr-hub/signalr-hub.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
